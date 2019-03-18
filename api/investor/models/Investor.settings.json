@@ -1,0 +1,35 @@
+{
+  "connection": "default",
+  "collectionName": "investors",
+  "info": {
+    "name": "investor",
+    "description": "Details about the investor"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "default": "",
+      "unique": true,
+      "type": "string",
+      "required": true
+    },
+    "investor_id": {
+      "default": "",
+      "unique": true,
+      "type": "integer",
+      "required": true
+    },
+    "bals": {
+      "collection": "bal",
+      "via": "investors"
+    },
+    "funds": {
+      "collection": "fund",
+      "via": "investors"
+    }
+  }
+}

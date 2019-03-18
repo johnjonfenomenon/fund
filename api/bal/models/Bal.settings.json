@@ -1,0 +1,28 @@
+{
+  "connection": "default",
+  "collectionName": "bals",
+  "info": {
+    "name": "bal",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "bal_val": {
+      "default": "",
+      "type": "integer"
+    },
+    "investors": {
+      "collection": "investor",
+      "via": "bals",
+      "dominant": true
+    },
+    "shares": {
+      "default": "",
+      "type": "integer"
+    }
+  }
+}

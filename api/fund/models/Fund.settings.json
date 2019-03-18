@@ -1,0 +1,36 @@
+{
+  "connection": "default",
+  "collectionName": "funds",
+  "info": {
+    "name": "fund",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "default": "",
+      "type": "string"
+    },
+    "fund_id": {
+      "default": "",
+      "type": "integer"
+    },
+    "rate_of_return_start_date": {
+      "default": "",
+      "type": "date"
+    },
+    "net_asset_value": {
+      "default": "",
+      "type": "integer"
+    },
+    "investors": {
+      "collection": "investor",
+      "via": "funds",
+      "dominant": true
+    }
+  }
+}

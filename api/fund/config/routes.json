@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/funds",
+      "handler": "Fund.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/funds/count",
+      "handler": "Fund.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/funds/:id",
+      "handler": "Fund.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/funds",
+      "handler": "Fund.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/funds/:id",
+      "handler": "Fund.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/funds/:id",
+      "handler": "Fund.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
